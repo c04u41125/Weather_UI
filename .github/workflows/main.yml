@@ -11,7 +11,7 @@ jobs:
     - name: Install dependencies
       run: |
         pip install PyQt5
-        pip install bs4
+        pip install beautifulsoup4
         pip install thread
         pip install reguests
         pip install sys
