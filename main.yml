@@ -11,4 +11,4 @@ jobs:
     
     - name: Run my python
       run: |
-        main.py
+        python3 main.py
