@@ -12,7 +12,7 @@ jobs:
       run: |
         pip install PyQt5
         pip install bs4
-        pip install threading
+        pip install thread
         pip install reguests
         pip install sys
     - name: Run my python
