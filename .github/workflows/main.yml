@@ -8,7 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2 # what kind of github action version to use
-    
+    - name: Install dependencies
+      run: |
+        pip install PyQt5
+
     - name: Run my python
       run: |
         python3 main.py
