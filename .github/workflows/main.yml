@@ -1,20 +1,20 @@
 name: Run my python
 
 on: 
-  push: # do this every push
+  push: # 每次 push 時觸發
+
 jobs:
   build:
     name: Set up environment
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2 # what kind of github action version to use
+    - uses: actions/checkout@v2 # 使用 GitHub Actions 的 checkout 行動，確保代碼被檢查出來
     - name: Install dependencies
       run: |
         pip install PyQt5
         pip install beautifulsoup4
-        pip install thread
-        pip install reguests
-        pip install sys
+        pip install requests
     - name: Run my python
       run: |
         python3 main.py
+
